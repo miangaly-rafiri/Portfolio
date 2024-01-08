@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #001f3f, rgb(255, 192, 235));
+    background-size: 400% 400%;
+    animation: gradientAnimation 50s infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 30px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    font-weight: bold;
+    margin: 35px;
+    font-family: "Times New Roman", Times, serif;
+    margin: 5% 20px;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after {
+    width: 105%;
+  }
+
+  .moi {
+    padding: 1%;
+  }
+  .moi h2 {
+    color: white;
+    font-family: "Rubik Lines";
+  }
+  p {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 200;
+  }
+  .moi p span {
+    color: bisque;
+  }
+  a {
+    font-family: "Rubik Lines";
+    font-size: 2rem;
+    text-decoration: none;
+    color: blueviolet;
+    float: right;
+  }
+  .moi a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Transition pour l'effet de zoom */
+    font-size: 1.8rem;
+  }
+  /* Effet de zoom au survol du lien */
+  .moi a:hover {
+    /* rotate: (360deg); */
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(99, 52, 219);
+  }
+  
+  
